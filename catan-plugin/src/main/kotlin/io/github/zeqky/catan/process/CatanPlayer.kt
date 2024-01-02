@@ -1,4 +1,6 @@
 package io.github.zeqky.catan.process
 
-class CatanPlayer {
+import org.bukkit.entity.Player
+
+class CatanPlayer(val player: Player) {
 }
