@@ -1,4 +1,6 @@
 package io.github.zeqky.catan.process
 
-class CatanListener {
+import org.bukkit.event.Listener
+
+class CatanListener : Listener {
 }
