@@ -17,6 +17,7 @@ class CatanPlugin : JavaPlugin() {
         saveResource("lands.txt", false)
         saveResource("roads.txt", false)
         saveResource("towns.txt", false)
+        saveDefaultConfig()
 
         kommand {
             "catan" {

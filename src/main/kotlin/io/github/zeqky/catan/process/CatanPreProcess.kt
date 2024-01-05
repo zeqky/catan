@@ -37,6 +37,8 @@ class CatanPreProcess(val plugin: CatanPlugin, val world: World) {
 
     lateinit var task: BukkitTask
 
+    val dices = arrayListOf<Dice>()
+
 
     fun launch(players: Set<Player>) {
         scope = HeartbeatScope()
@@ -108,6 +110,10 @@ class CatanPreProcess(val plugin: CatanPlugin, val world: World) {
         }
 
         this.players = list
+    }
+
+    fun spawnDice(player: CatanPlayer) {
+        dices += Dice(this, player)
     }
 
     fun stop() {
